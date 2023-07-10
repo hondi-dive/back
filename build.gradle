@@ -1,0 +1,95 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '2.7.6'
+	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+
+	// database
+	runtimeOnly 'mysql:mysql-connector-java'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	runtimeOnly 'org.mariadb.jdbc:mariadb-java-client:2.7.2'
+
+	// copyProperties()
+	// https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
+	implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.0'
+
+	// JWT
+	implementation 'io.jsonwebtoken:jjwt:0.9.1'
+
+	// lombok
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor ('org.projectlombok:lombok')
+
+	// spring security
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
+
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
+
+
+def frontendDir = "$projectDir/frontend"
+
+sourceSets {
+	main {
+		resources {
+			srcDirs = ["$projectDir/src/main/resources"]
+		}
+		java {
+			exclude '**/securityV2/**' // 무시하고자 하는 패키지 경로를 지정합니다.
+		}
+	}
+}
+
+/*
+processResources {
+	dependsOn "copyReactBuildFiles"
+}
+
+task installReact(type: Exec) {
+	workingDir "$frontendDir"
+	inputs.dir "$frontendDir"
+	group = BasePlugin.BUILD_GROUP
+	if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
+		commandLine "npm.cmd", "audit", "fix"
+		commandLine 'npm.cmd', 'install'
+	} else {
+		commandLine "npm", "audit", "fix"
+		commandLine 'npm', 'install'
+	}
+}
+
+task buildReact(type: Exec) {
+	dependsOn "installReact"
+	workingDir "$frontendDir"
+	inputs.dir "$frontendDir"
+	group = BasePlugin.BUILD_GROUP
+	if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
+		commandLine "npm.cmd", "run-script", "build"
+	} else {
+		commandLine "npm", "run-script", "build"
+	}
+}
+
+task copyReactBuildFiles(type: Copy) {
+	dependsOn "buildReact"
+	from "$frontendDir/build"
+	into "$buildDir/resources/main/static"
+}
+*/

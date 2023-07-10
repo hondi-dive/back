@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.kakao.KakaoApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-07-10T06:56:52" hostname="kimjaehyuks-MacBook-Air.local" time="0.045">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.example.kakao.KakaoApplicationTests" time="0.045"/>
+  <system-out><![CDATA[15:56:50.050 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+15:56:50.054 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+15:56:50.068 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.example.kakao.KakaoApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+15:56:50.073 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.kakao.KakaoApplicationTests], using SpringBootContextLoader
+15:56:50.075 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.kakao.KakaoApplicationTests]: class path resource [com/example/kakao/KakaoApplicationTests-context.xml] does not exist
+15:56:50.075 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.kakao.KakaoApplicationTests]: class path resource [com/example/kakao/KakaoApplicationTestsContext.groovy] does not exist
+15:56:50.075 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.kakao.KakaoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+15:56:50.075 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.kakao.KakaoApplicationTests]: KakaoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:56:50.094 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.example.kakao.KakaoApplicationTests]
+15:56:50.116 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/kimjaehyuk/Desktop/back/build/classes/java/main/com/example/kakao/KakaoApplication.class]
+15:56:50.120 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.kakao.KakaoApplication for test class com.example.kakao.KakaoApplicationTests
+15:56:50.161 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.example.kakao.KakaoApplicationTests]: using defaults.
+15:56:50.162 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+15:56:50.169 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3e2fc448, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@21680803, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@588ab592, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@c8b96ec, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4cc61eb1, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2d8f2f3a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2024293c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7048f722, org.springframework.test.context.event.EventPublishingTestExecutionListener@c074c0c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@58a55449, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5949eba8, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6e0ff644, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@58dea0a5, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@2a2bb0eb, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3c291aad]
+15:56:50.171 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@62c5bbdc testClass = KakaoApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@7bdf6bb7 testClass = KakaoApplicationTests, locations = '{}', classes = '{class com.example.kakao.KakaoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@3dd1dc90, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@75f65e45, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@75390459, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@57fd91c9, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@25e2a451, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@33f676f6], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.6)
+
+2023-07-10 15:56:50.425  INFO 2595 --- [    Test worker] com.example.kakao.KakaoApplicationTests  : Starting KakaoApplicationTests using Java 11.0.19 on kimjaehyuks-MacBook-Air.local with PID 2595 (started by kimjaehyuk in /Users/kimjaehyuk/Desktop/back)
+2023-07-10 15:56:50.426  INFO 2595 --- [    Test worker] com.example.kakao.KakaoApplicationTests  : The following 1 profile is active: "local"
+2023-07-10 15:56:50.805  INFO 2595 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-10 15:56:50.834  INFO 2595 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 5 JPA repository interfaces.
+2023-07-10 15:56:51.107  INFO 2595 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-10 15:56:51.127  INFO 2595 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-07-10 15:56:51.203  INFO 2595 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-07-10 15:56:51.244  INFO 2595 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-10 15:56:51.443  INFO 2595 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-10 15:56:51.451  INFO 2595 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+Hibernate: 
+    
+    alter table divepost 
+       drop 
+       foreign key FKh1m16ki7qh0vmh0mmwlrfkveg
+Hibernate: 
+    
+    alter table divepost 
+       drop 
+       foreign key FKj33v53ffg61vy8qhf378q00kw
+Hibernate: 
+    
+    alter table divepost_tag 
+       drop 
+       foreign key FKq0yeuhpjiqh5edyi5jgwyf4y3
+Hibernate: 
+    
+    alter table divepost_tag 
+       drop 
+       foreign key FKbxis37h5k9ai98hxtqrclwpdl
+Hibernate: 
+    
+    alter table feedback 
+       drop 
+       foreign key FK6089hj8mn57xmpemqh24be49p
+Hibernate: 
+    
+    alter table feedback 
+       drop 
+       foreign key FK7k33yw505d347mw3avr93akao
+Hibernate: 
+    
+    drop table if exists divepost
+Hibernate: 
+    
+    drop table if exists divepost_tag
+Hibernate: 
+    
+    drop table if exists feedback
+Hibernate: 
+    
+    drop table if exists point
+Hibernate: 
+    
+    drop table if exists tag
+Hibernate: 
+    
+    drop table if exists user
+Hibernate: 
+    
+    create table divepost (
+       id integer not null auto_increment,
+        after_intake integer,
+        before_intake integer,
+        date datetime(6),
+        decompression integer,
+        deep_flow integer,
+        dive_entry integer,
+        dive_time integer,
+        dive_type varchar(255),
+        eyesight integer,
+        img_url varchar(255),
+        like_cnt integer,
+        max_depth integer,
+        point_depth integer,
+        star integer,
+        surface_flow integer,
+        temp double precision,
+        text varchar(255),
+        water_temp double precision,
+        point_id integer,
+        user_id integer,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table divepost_tag (
+       divepost_id integer not null,
+        tag_id integer not null,
+        primary key (divepost_id, tag_id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table feedback (
+       id integer not null auto_increment,
+        content varchar(255),
+        dive_post_id integer,
+        user_id integer,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table point (
+       id integer not null auto_increment,
+        latitude double precision,
+        longitude double precision,
+        name varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table tag (
+       id integer not null auto_increment,
+        tag_name varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table user (
+       id integer not null auto_increment,
+        image_uri varchar(255),
+        role_type varchar(255),
+        user_name varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    alter table tag 
+       add constraint UK_1r1tyf6uga9k6jwdqnoqwtk2a unique (tag_name)
+Hibernate: 
+    
+    alter table divepost 
+       add constraint FKh1m16ki7qh0vmh0mmwlrfkveg 
+       foreign key (point_id) 
+       references point (id)
+Hibernate: 
+    
+    alter table divepost 
+       add constraint FKj33v53ffg61vy8qhf378q00kw 
+       foreign key (user_id) 
+       references user (id)
+Hibernate: 
+    
+    alter table divepost_tag 
+       add constraint FKq0yeuhpjiqh5edyi5jgwyf4y3 
+       foreign key (tag_id) 
+       references tag (id)
+Hibernate: 
+    
+    alter table divepost_tag 
+       add constraint FKbxis37h5k9ai98hxtqrclwpdl 
+       foreign key (divepost_id) 
+       references divepost (id)
+Hibernate: 
+    
+    alter table feedback 
+       add constraint FK6089hj8mn57xmpemqh24be49p 
+       foreign key (dive_post_id) 
+       references divepost (id)
+Hibernate: 
+    
+    alter table feedback 
+       add constraint FK7k33yw505d347mw3avr93akao 
+       foreign key (user_id) 
+       references user (id)
+2023-07-10 15:56:51.914  INFO 2595 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-10 15:56:51.919  INFO 2595 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-10 15:56:52.249  WARN 2595 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-07-10 15:56:52.336  WARN 2595 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 8d74801a-6bd9-4950-9512-9b7af845fbd3
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-07-10 15:56:52.417  INFO 2595 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6cd1ee, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@122a6078, org.springframework.security.web.context.SecurityContextPersistenceFilter@38affd02, org.springframework.security.web.header.HeaderWriterFilter@6a175162, org.springframework.web.filter.CorsFilter@6980fa39, org.springframework.security.web.authentication.logout.LogoutFilter@74120029, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1db7a4ae, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@18356d9e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1a000fff, org.springframework.security.web.session.SessionManagementFilter@397b5b2d, org.springframework.security.web.access.ExceptionTranslationFilter@3811464b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3da12ba4]
+2023-07-10 15:56:52.610  INFO 2595 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-07-10 15:56:52.820  INFO 2595 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-07-10 15:56:52.847  INFO 2595 --- [    Test worker] com.example.kakao.KakaoApplicationTests  : Started KakaoApplicationTests in 2.661 seconds (JVM running for 3.166)
+Hibernate: 
+    select
+        user0_.id as id1_5_,
+        user0_.image_uri as image_ur2_5_,
+        user0_.role_type as role_typ3_5_,
+        user0_.user_name as user_nam4_5_ 
+    from
+        user user0_ 
+    where
+        user0_.user_name=?
+Hibernate: 
+    insert 
+    into
+        user
+        (image_uri, role_type, user_name) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    select
+        user0_.id as id1_5_,
+        user0_.image_uri as image_ur2_5_,
+        user0_.role_type as role_typ3_5_,
+        user0_.user_name as user_nam4_5_ 
+    from
+        user user0_ 
+    where
+        user0_.user_name=?
+Hibernate: 
+    insert 
+    into
+        user
+        (image_uri, role_type, user_name) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    select
+        user0_.id as id1_5_,
+        user0_.image_uri as image_ur2_5_,
+        user0_.role_type as role_typ3_5_,
+        user0_.user_name as user_nam4_5_ 
+    from
+        user user0_ 
+    where
+        user0_.user_name=?
+Hibernate: 
+    insert 
+    into
+        user
+        (image_uri, role_type, user_name) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    select
+        user0_.id as id1_5_,
+        user0_.image_uri as image_ur2_5_,
+        user0_.role_type as role_typ3_5_,
+        user0_.user_name as user_nam4_5_ 
+    from
+        user user0_ 
+    where
+        user0_.user_name=?
+Hibernate: 
+    insert 
+    into
+        user
+        (image_uri, role_type, user_name) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    select
+        point0_.id as id1_3_,
+        point0_.latitude as latitude2_3_,
+        point0_.longitude as longitud3_3_,
+        point0_.name as name4_3_ 
+    from
+        point point0_ 
+    where
+        point0_.name=?
+Hibernate: 
+    insert 
+    into
+        point
+        (latitude, longitude, name) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    select
+        point0_.id as id1_3_,
+        point0_.latitude as latitude2_3_,
+        point0_.longitude as longitud3_3_,
+        point0_.name as name4_3_ 
+    from
+        point point0_ 
+    where
+        point0_.name=?
+Hibernate: 
+    insert 
+    into
+        point
+        (latitude, longitude, name) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    select
+        point0_.id as id1_3_,
+        point0_.latitude as latitude2_3_,
+        point0_.longitude as longitud3_3_,
+        point0_.name as name4_3_ 
+    from
+        point point0_ 
+    where
+        point0_.name=?
+Hibernate: 
+    insert 
+    into
+        point
+        (latitude, longitude, name) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    select
+        point0_.id as id1_3_,
+        point0_.latitude as latitude2_3_,
+        point0_.longitude as longitud3_3_,
+        point0_.name as name4_3_ 
+    from
+        point point0_ 
+    where
+        point0_.name=?
+Hibernate: 
+    insert 
+    into
+        point
+        (latitude, longitude, name) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    select
+        point0_.id as id1_3_,
+        point0_.latitude as latitude2_3_,
+        point0_.longitude as longitud3_3_,
+        point0_.name as name4_3_ 
+    from
+        point point0_ 
+    where
+        point0_.name=?
+Hibernate: 
+    select
+        point0_.id as id1_3_,
+        point0_.latitude as latitude2_3_,
+        point0_.longitude as longitud3_3_,
+        point0_.name as name4_3_ 
+    from
+        point point0_ 
+    where
+        point0_.name=?
+Hibernate: 
+    insert 
+    into
+        point
+        (latitude, longitude, name) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    select
+        point0_.id as id1_3_,
+        point0_.latitude as latitude2_3_,
+        point0_.longitude as longitud3_3_,
+        point0_.name as name4_3_ 
+    from
+        point point0_ 
+    where
+        point0_.name=?
+Hibernate: 
+    insert 
+    into
+        point
+        (latitude, longitude, name) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    select
+        point0_.id as id1_3_,
+        point0_.latitude as latitude2_3_,
+        point0_.longitude as longitud3_3_,
+        point0_.name as name4_3_ 
+    from
+        point point0_ 
+    where
+        point0_.name=?
+Hibernate: 
+    insert 
+    into
+        point
+        (latitude, longitude, name) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    select
+        point0_.id as id1_3_,
+        point0_.latitude as latitude2_3_,
+        point0_.longitude as longitud3_3_,
+        point0_.name as name4_3_ 
+    from
+        point point0_ 
+    where
+        point0_.name=?
+Hibernate: 
+    insert 
+    into
+        point
+        (latitude, longitude, name) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    select
+        point0_.id as id1_3_,
+        point0_.latitude as latitude2_3_,
+        point0_.longitude as longitud3_3_,
+        point0_.name as name4_3_ 
+    from
+        point point0_ 
+    where
+        point0_.name=?
+Hibernate: 
+    insert 
+    into
+        point
+        (latitude, longitude, name) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    select
+        point0_.id as id1_3_,
+        point0_.latitude as latitude2_3_,
+        point0_.longitude as longitud3_3_,
+        point0_.name as name4_3_ 
+    from
+        point point0_ 
+    where
+        point0_.name=?
+Hibernate: 
+    insert 
+    into
+        point
+        (latitude, longitude, name) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    select
+        point0_.id as id1_3_,
+        point0_.latitude as latitude2_3_,
+        point0_.longitude as longitud3_3_,
+        point0_.name as name4_3_ 
+    from
+        point point0_ 
+    where
+        point0_.name=?
+Hibernate: 
+    insert 
+    into
+        point
+        (latitude, longitude, name) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    select
+        user0_.id as id1_5_,
+        user0_.image_uri as image_ur2_5_,
+        user0_.role_type as role_typ3_5_,
+        user0_.user_name as user_nam4_5_ 
+    from
+        user user0_ 
+    where
+        user0_.user_name=?
+Hibernate: 
+    insert 
+    into
+        user
+        (image_uri, role_type, user_name) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        divepost
+        (after_intake, before_intake, date, decompression, deep_flow, dive_entry, dive_time, dive_type, eyesight, img_url, like_cnt, max_depth, point_id, point_depth, star, surface_flow, temp, text, user_id, water_temp) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        divepost
+        (after_intake, before_intake, date, decompression, deep_flow, dive_entry, dive_time, dive_type, eyesight, img_url, like_cnt, max_depth, point_id, point_depth, star, surface_flow, temp, text, user_id, water_temp) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        divepost
+        (after_intake, before_intake, date, decompression, deep_flow, dive_entry, dive_time, dive_type, eyesight, img_url, like_cnt, max_depth, point_id, point_depth, star, surface_flow, temp, text, user_id, water_temp) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        divepost
+        (after_intake, before_intake, date, decompression, deep_flow, dive_entry, dive_time, dive_type, eyesight, img_url, like_cnt, max_depth, point_id, point_depth, star, surface_flow, temp, text, user_id, water_temp) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        divepost
+        (after_intake, before_intake, date, decompression, deep_flow, dive_entry, dive_time, dive_type, eyesight, img_url, like_cnt, max_depth, point_id, point_depth, star, surface_flow, temp, text, user_id, water_temp) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

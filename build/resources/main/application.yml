@@ -1,0 +1,35 @@
+server:
+  port : 8080
+
+spring:
+  profiles:
+    active: local
+
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+
+  data:
+    web:
+      pageable:
+        default-page-size: 20
+        one-indexed-parameters: false
+
+  # Message ??
+  messages:
+    basename: 'messages/validation'
+    encoding: UTF-8
+
+#springdoc:
+#  swagger-ui:
+#    path: /api-docs
+#  default-consumes-media-type: application/json
+#  default-produces-media-type: application/json
+
+#app:
+#  auth:
+#    tokenSecret: 926D96C90030DD58429D2751AC1BDBBC
+#    refreshTokenSecret: DF15DFAE0F4C935FEC3C6D894E783DFF
+#    tokenExpiry: 1800000
+#    refreshTokenExpiry: 604800000

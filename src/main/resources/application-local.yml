@@ -1,0 +1,63 @@
+spring:
+  config:
+    activate:
+      on-profile:
+
+  # 데이터 소스 설정
+  datasource:
+    url: jdbc:mysql://localhost:3306/GOORM?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    driverClassName: com.mysql.cj.jdbc.Driver #배포전 마리아디비로 바꾸기!
+#    url: ${DATABASE_URL}
+#    driverClassName: org.mariadb.jdbc.Driver
+    username: root
+    password: 123456789
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        use_sql_comments: false
+        generate_statistics: false
+
+cors:
+  allowed-origins: 'http://localhost:3000,http://172.30.1.27:3000'
+  allowed-methods: GET,POST,PUT,DELETE,OPTIONS,PATCH
+  allowed-headers: '*'
+  allowed-Credentials: false
+  max-age: 3600
+
+app:
+  base-url: http://172.30.1.85:8080
+#app:
+#  base-url: http://localhost:8080
+
+# cors 설정
+#cors:
+#  allowed-origins: 'http://localhost:8080,http://localhost:3000'
+#  allowed-methods: GET,POST,PUT,DELETE,OPTIONS,PATCH
+#  allowed-headers: '*'
+#  allowed-Credentials: false
+#  max-age: 3600
+
+#info:
+#  web:
+#    frontUrl: 'http://localhost:3000'
+#    domain: "localhost"
+
+#cloud:
+#  aws:
+#    credentials:
+#      accessKey: AKIAYXL3AA4JJN3VFYQA
+#      secretKey: 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
+#    s3:
+#      bucket: 42gg-public-test-image
+#      dir: images/
+#    region:
+#      static: ap-northeast-2
+#    stack:
+#      auto: false
+
